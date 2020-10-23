@@ -1,5 +1,5 @@
 # test
 
-https://ts.lancentjk.com/
+[☞](https://github.com/lancentjk/ts) https://ts.lancentjk.com/
 
-https://ts.choong.net/
+[☞](https://github.com/inchoong/ts/) https://ts.choong.net/
