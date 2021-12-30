@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>【瑞联集团】三氢创康·全国市场综合大数据平台</title>
+	<link rel="icon" href="img/三氢创康-小程序图标.png" > <!-- Microsoft 徽标 -->
+<!-- IE地址栏前换成自己的图标 -->
+  <link href="img/三氢创康-小程序图标.png" rel="Bookmark">  <!-- 可以在收藏夹中显示出你的图标 -->	
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/map.css">
+	<link rel="stylesheet" href="https://y.choong.net/QPlayer/css/player.css"><!-- 网页悬浮音乐播放器 -->
+	<script src="https://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>  <!--获取当前实时时间-jq22.com  -->
+</head>
+<body>
+<div class="data">
+
+    <div class="data-title">
+        <div class="title-left fl"></div>
+        <div class="title-center fl"></div>
+        <div class="title-right fr"></div>
+    </div>
+    <div class="data-content">
+        <div class="con-left fl">
+            <div class="left-top">			
+					
+                <div class="info">
+				
+                    <div class="info-title">实时统计</div>		
+                    <img src="img/bj-1.png" alt="" class="bj-1">
+                    <img src="img/bj-2.png" alt="" class="bj-2">
+                    <img src="img/bj-3.png" alt="" class="bj-3">
+                    <img src="img/bj-4.png" alt="" class="bj-4">
+                    <div class="info-main">
+                        <div class="info-1">
+                            <div class="info-img fl">
+                                <img src="img/info-img-1.png" alt="">
+                            </div>
+                            <div class="info-text fl">
+                                <p>店面总数(家)</p>
+                                <p>12,357</p>
+                            </div>
+                        </div>
+                        <div class="info-2">
+                            <div class="info-img fl">
+                                <img src="img/info-img-2.png" alt="">
+                            </div>
+                            <div class="info-text fl">
+                                <p>当前活动(店面)</p>
+                                <p>12,357</p>
+                            </div>
+                        </div>
+                        <div class="info-3">
+                            <div class="info-img fl">
+                                <img src="img/info-img-3.png" alt="">
+                            </div>
+                            <div class="info-text fl">
+                                <p>今日活跃数(店面)</p>
+                                <p>12,457</p>
+                            </div>
+                        </div>
+                        <div class="info-4">
+                            <div class="info-img fl">
+                                <img src="img/info-img-4.png" alt="">
+                            </div>
+                            <div class="info-text fl">
+                                <p>今日活跃率(%)</p>
+                                <p>83</p>
+                            </div>
+                        </div>
+                    </div>
+					
+                </div>
+                <div class="top-bottom">
+                    <div class="title">省市分布</div>
+                    <img src="img/bj-1.png" alt="" class="bj-1">
+                    <img src="img/bj-2.png" alt="" class="bj-2">
+                    <img src="img/bj-3.png" alt="" class="bj-3">
+                    <img src="img/bj-4.png" alt="" class="bj-4">
+                    <div id="echarts_1" class="charts"></div>
+                </div>
+            </div>
+            <div class="left-bottom">
+                <div class="title">产品分类</div>
+                <img src="img/bj-1.png" alt="" class="bj-1">
+                <img src="img/bj-2.png" alt="" class="bj-2">
+                <img src="img/bj-3.png" alt="" class="bj-3">
+                <img src="img/bj-4.png" alt="" class="bj-4">
+                <div id="echarts_2" class="charts"></div>
+            </div>
+        </div>
+        <div class="con-center fl">
+            <div class="map-num">
+			<!--获取当前实时时间 -->	
+		    <div id="dateTime" style="text-align:left;color:#ffffff;font-size:20px;text-decoration:none;">				
+        <script>
+            Date.prototype.format = function (fmt) {
+            var o = {
+                "y+": this.getFullYear, //年
+                "M+": this.getMonth() + 1, //月份
+                "d+": this.getDate(), //日
+                "h+": this.getHours(), //小时
+                "m+": this.getMinutes(), //分
+                "s+": this.getSeconds() //秒
+            };
+            if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+            for (var k in o)
+                if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+            return fmt;
+        }
+        setInterval("document.getElementById('dateTime').innerHTML = (new Date()).format('yyyy-MM-dd hh:mm:ss');", 1000);
+    </script> 
+		</div> 
+		<!--获取当前实时时间-->	
+                <p><font color="#FC1205"><strong>宝瓶制氢机</strong></font> 实时销售(<font color="#FC1205"><strong>台</strong></font>)：</p>
+                <div class="num">
+                    <span>1</span>
+                    <span>,</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>,</span>
+                    <span>5</span>
+                    <span>6</span>
+                    <span>7</span>
+                </div>				
+            </div>
+            <div class="cen-top" id="map"></div>
+            <div class="cen-bottom">
+                <div class="title">活动高峰时间</div>
+                <img src="img/bj-1.png" alt="" class="bj-1">
+                <img src="img/bj-2.png" alt="" class="bj-2">
+                <img src="img/bj-3.png" alt="" class="bj-3">
+                <img src="img/bj-4.png" alt="" class="bj-4">
+                <div id="echarts_3" class="charts"></div>
+            </div>
+        </div>
+        <div class="con-right fr">
+            <div class="right-top">
+                <div class="title">本月销售排名TOP5</div>
+                <img src="img/bj-1.png" alt="" class="bj-1">
+                <img src="img/bj-2.png" alt="" class="bj-2">
+                <img src="img/bj-3.png" alt="" class="bj-3">
+                <img src="img/bj-4.png" alt="" class="bj-4">
+                <div id="echarts_4" class="charts"></div>
+            </div>
+            <div class="right-center">
+                <div class="title">季度销量排行TOP5</div>
+                <img src="img/bj-1.png" alt="" class="bj-1">
+                <img src="img/bj-2.png" alt="" class="bj-2">
+                <img src="img/bj-3.png" alt="" class="bj-3">
+                <img src="img/bj-4.png" alt="" class="bj-4">
+                <div id="echarts_5" class="charts"></div>
+            </div>
+            <div class="right-bottom">
+                <div class="title">产品库存报警TOP10</div>
+                <img src="img/bj-1.png" alt="" class="bj-1">
+                <img src="img/bj-2.png" alt="" class="bj-2">
+                <img src="img/bj-3.png" alt="" class="bj-3">
+                <img src="img/bj-4.png" alt="" class="bj-4">
+                <div id="echarts_6" class="charts"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+ <!--  <iframe frameborder="0" scrolling="no" src="https://y.choong.net/QPlayer/"></iframe> -->
+ <!-- 网页悬浮音乐播放器 -->
+	<div id="QPlayer">
+<div id="pContent">
+	<div id="player">
+		<span class="cover"></span>
+		<div class="ctrl">
+			<div class="musicTag marquee">
+				<strong>Title</strong>
+				 <span> - </span>
+				<span class="artist">Artist</span>
+			</div>
+			<div class="progress">
+				<div class="timer left">0:00</div>
+				<div class="contr">
+					<div class="rewind icon"></div>
+					<div class="playback icon"></div>
+					<div class="fastforward icon"></div>
+				</div>
+				<div class="right">
+					<div class="liebiao icon"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="ssBtn">
+	        <div class="adf"></div>
+    </div>
+</div>
+<ol id="playlist"></ol>
+</div>
+
+<script src="https://y.choong.net/QPlayer/js/jquery.min.js"></script>
+<script src="https://y.choong.net/QPlayer/js/jquery.marquee.min.js"></script>
+
+<script>
+	var playlist = [
+	{title:"左手指月(夜色钢琴曲)",artist:"赵海洋",mp3:"https://share.choong.net/mp3/《夜色钢琴曲》左手指月%20-%20赵海洋.mp3",cover:"http://p4.music.126.net/7VJn16zrictuj5kdfW1qHA==/3264450024433083.jpg?param=106x106",},
+];
+  var isRotate = true;
+  var autoplay = false;
+</script>
+<script src="https://y.choong.net/QPlayer/js/player.js"></script>
+<script>
+
+function bgChange(){
+	var lis= $('.lib');
+	for(var i=0; i<lis.length; i+=2)
+	lis[i].style.background = 'rgba(246, 246, 246, 0.5)';
+}
+window.onload = bgChange;
+</script> <!-- 网页悬浮音乐播放器 -->
+
+</body>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/echarts.min.js"></script>
+<script src="js/china.js"></script>
+<script src="js/echarts.js"></script>
+</html>
