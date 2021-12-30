@@ -1,6 +1,8 @@
-# [**数据可视化：深入浅出BI**](https://zhuanlan.zhihu.com/p/24573880) - [**知乎专栏**](https://zhuanlan.zhihu.com/)
+# [**可视化 Bi - 国内版 Bing**](https://cn.bing.com/search?q=%E5%8F%AF%E8%A7%86%E5%8C%96+Bi)
 
->> [**Quick BI官网_BI数据可视化分析工具_智能报表-阿里云**](https://www.aliyun.com/product/bigdata/bi)
+>[**数据可视化：深入浅出BI**](https://zhuanlan.zhihu.com/p/24573880) - [**知乎专栏**](https://zhuanlan.zhihu.com/)
+
+- [**Quick BI官网_BI数据可视化分析工具_智能报表-阿里云**](https://www.aliyun.com/product/bigdata/bi)
 
 >> [**iconfont-阿里巴巴矢量图标库**](https://www.iconfont.cn/search/index?searchType=icon&q=web)
 
