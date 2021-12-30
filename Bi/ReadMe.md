@@ -1,5 +1,7 @@
 # [**数据可视化：深入浅出BI**](https://zhuanlan.zhihu.com/p/24573880) - [**知乎专栏**](https://zhuanlan.zhihu.com/)
 
+>> [**Quick BI官网_BI数据可视化分析工具_智能报表-阿里云**](https://www.aliyun.com/product/bigdata/bi)
+
 >> [**iconfont-阿里巴巴矢量图标库**](https://www.iconfont.cn/search/index?searchType=icon&q=web)
 
 - [【瑞联集团】三氢创康·全国市场综合大数据平台](https://m.reliancejk.com/date2021/)
